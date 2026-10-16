@@ -14,7 +14,9 @@ diskon, dan mencatat pesanan makanan, semuanya lewat menu interaktif.
 ## Anggota Kelompok
 
 Nama: Naufal Ghaisan Zafif Ginting (261401070) KOM: B Lab: 3
+
 Nama: Lovita Amanda Simanjuntak (261401147) KOM : B Lab: 4
+
 Nama: 
 ## Fitur Utama
 
