@@ -4,7 +4,7 @@ UTS_Daspro_GoodVibes_B
 Space.net Internet Cafe - Program Billing Warnet
 
  
-Deskripsi Singkat
+## Deskripsi Singkat
 
 Space.net Internet Cafe adalah program Pascal berbasis teks (console) untuk membantu
 operator warnet menghitung biaya sewa komputer dan pesanan makanan/minuman pelanggan.
@@ -14,7 +14,8 @@ diskon, dan mencatat pesanan makanan, semuanya lewat menu interaktif.
 Anggota Kelompok
 
 Nama: Naufal Ghaisan Zafif Ginting (261401070) KOM: B Lab: 3
-N
+Nama: Lovita Amanda Simanjuntak (261401147) KOM : B Lab: 4
+Nama: 
 ## Fitur Utama
 
 1. Menu Interaktif
