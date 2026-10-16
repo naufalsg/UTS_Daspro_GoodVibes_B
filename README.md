@@ -11,7 +11,7 @@ operator warnet menghitung biaya sewa komputer dan pesanan makanan/minuman pelan
 Program menampilkan daftar tarif, menghitung total bayar sesi bermain lengkap dengan
 diskon, dan mencatat pesanan makanan, semuanya lewat menu interaktif.
 
-Anggota Kelompok
+## Anggota Kelompok
 
 Nama: Naufal Ghaisan Zafif Ginting (261401070) KOM: B Lab: 3
 Nama: Lovita Amanda Simanjuntak (261401147) KOM : B Lab: 4
