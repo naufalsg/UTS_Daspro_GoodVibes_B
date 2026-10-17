@@ -6,10 +6,10 @@ Space.net Internet Cafe - Program Billing Warnet
  
 ## Deskripsi Singkat
 
-Space.net Internet Cafe adalah program Pascal berbasis teks (console) untuk membantu
+Space.Net Internet Cafe adalah program Pascal berbasis teks untuk membantu
 operator warnet menghitung biaya sewa komputer dan pesanan makanan/minuman pelanggan.
 Program menampilkan daftar tarif, menghitung total bayar sesi bermain lengkap dengan
-diskon, dan mencatat pesanan makanan, semuanya lewat menu interaktif.
+diskon, dan menghitung total pesanan makanan, semuanya lewat menu interaktif.
 
 ## Anggota Kelompok
 
@@ -20,38 +20,24 @@ Nama: Lovita Amanda Simanjuntak (261401147) KOM: B Lab: 4
 Nama: Nurul Anggraini Samosir (261401039) KOM: B Lab: 3
 ## Fitur Utama
 
-1. Menu Interaktif
-Menu utama berjalan dalam perulangan `repeat-until` dan baru berhenti saat pengguna
-memilih `0` (Keluar). Pilihan diproses dengan `case-of`: 1 Daftar tarif, 2 Sesi baru,
-3 Pesan makanan.
+### 1. Daftar Tarif
+Menampilkan tarif per jam dan aturan diskon.
 
-2. Daftar Tarif
-Menampilkan tarif per jam: Reguler Rp5.000, VIP Rp8.000, Gaming Rp10.000, serta
-aturan diskon.
+Reguler | Rp5.000/jam 
+VIP | Rp8.000/jam 
+Gaming  Rp10.000/jam 
 
-3. Sesi Baru (Hitung Biaya Main)
-- Pengguna memasukkan nama, memilih paket (`case-of`), dan memasukkan lama main.
-- Lama main divalidasi dengan `while-do` sampai tidak negatif. Mengisi `0` berarti
-  sesi dibatalkan.
+Diskon: 10% untuk durasi mulai 3 jam, dan 15% untuk durasi mulai 5 jam.
+
+### 2. Sesi Baru
+Pengguna memasukkan nama, memilih paket (1-3), lalu mengisi lama main dalam jam (0 untuk membatalkan). Program menghitung subtotal, diskon, dan total, lalu mencetak struk.
+
+Logika singkat:
+- Paket dipilih dengan `case-of`. Input di luar 1-3 ditolak dan diminta ulang lewat `while-do`.
+- Lama main divalidasi dengan `while-do`: nilai negatif ditolak dan diminta ulang.
 - Subtotal = tarif per jam x lama main.
-- Diskon ditentukan dengan `if-then-else` bertingkat:
-  - lama main 5 jam atau lebih: diskon 15%
-  - lama main 3 jam atau lebih: diskon 10%
-  - selain itu: tanpa diskon
-- Total bayar = subtotal - diskon, lalu struk dicetak dengan garis pemisah memakai
-  perulangan `for-to-do`.
+- Diskon ditentukan dengan `if-then-else` bertingkat: 15% jika 5 jam atau lebih, 10% jika 3 jam atau lebih, selain itu 0.
+- Total = subtotal - diskon.
 
-4. Pesan Makanan dan Minuman
-- Pengguna memilih menu (Mie Instan, Nasi Goreng, Es Teh, Kopi) berulang kali dalam
-  perulangan `repeat-until`.
-- `break` dipakai untuk keluar dari perulangan saat memilih `0` (Selesai).
-- `continue` dipakai untuk melewati proses saat menu tidak ada atau jumlah tidak valid,
-  sehingga pengguna langsung diminta memilih lagi.
-- Harga item dipilih dengan `case-of`, lalu total makanan diakumulasi dan struk dicetak.
-
-5. Validasi Input Angka
-Function `bacaAngka` membaca input sebagai teks, lalu mengubahnya ke angka dengan `val`.
-Jika pengguna mengetik huruf atau mengosongkan input, program menampilkan pesan
-"Input harus berupa angka!" dan meminta input ulang, sehingga program tidak error.
-
-
+### 3. Pesan Makanan
+Pengguna memilih makanan atau minuman dari menu (Mie Instan, Nasi Goreng, Es Teh, Kopi), mengisi jumlah, dan bisa memesan beberapa item berturut-turut sampai memilih 0 (Selesai). Program mencetak total pesanan.
