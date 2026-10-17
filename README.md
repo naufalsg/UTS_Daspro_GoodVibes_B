@@ -15,9 +15,9 @@ diskon, dan mencatat pesanan makanan, semuanya lewat menu interaktif.
 
 Nama: Naufal Ghaisan Zafif Ginting (261401070) KOM: B Lab: 3
 
-Nama: Lovita Amanda Simanjuntak (261401147) KOM : B Lab: 4
+Nama: Lovita Amanda Simanjuntak (261401147) KOM: B Lab: 4
 
-Nama: 
+Nama: Nurul Anggraini Samosir (261401039) KOM: B Lab: 3
 ## Fitur Utama
 
 1. Menu Interaktif
