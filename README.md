@@ -41,3 +41,6 @@ Logika singkat:
 
 ### 3. Pesan Makanan
 Pengguna memilih makanan atau minuman dari menu (Mie Instan, Nasi Goreng, Es Teh, Kopi), mengisi jumlah, dan bisa memesan beberapa item berturut-turut sampai memilih 0 (Selesai). Program mencetak total pesanan.
+
+## References
+https://vt.tiktok.com/ZSg6jMKxS/
